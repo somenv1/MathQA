@@ -14,7 +14,8 @@ from peft import (
 )
 from huggingface_hub import login
 
-token = "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" 
+with open('hg.token','r') as ft:
+	token = ft.read().strip()
 login(token=token) #Log into huggingface
 
 model_path = "google/gemma-2-2b-it"   # Specify the path to the model

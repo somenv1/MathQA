@@ -44,7 +44,8 @@ import os
 from huggingface_hub import login
 
 #token = os.environ['huggingface_token'] #Load huggingface token from .env to access Llama-2
-token = "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" 
+with open('hg.token','r') as ft:
+	token = ft.read().strip()
 login(token=token) #Log into huggingface
 
 torch.backends.cuda.matmul.allow_tf32 = True
