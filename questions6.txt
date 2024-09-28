@@ -1,0 +1,33 @@
+ Concreteness is defined as a word's total amount of tangible words. High concreteness means a sentence has sufficient real objects and well-defined words that make a meaningful sentence with a high number of specifics. Low concreteness means a sentence has a large amount of abstract words and undefined objects that still make a meaningful sentence but lack a clear story. Use the given definition of concreteness and generate questions with high, medium and low concreteness based on the following information, 200 cats are in a cat park. 100 more cats show up at the cat park. 25% of the cats at the cat park are meowing. How many cats are meowing?  Based on your definition of concreteness and the information provided, how exactly should we define concreteness in terms of cats? 
+
+Here's a breakdown of the answers I got:
+- High Concreteness (20%): "200 cats are in the cat park. 100 more cats show up at the cat park. In the park, 25% of the cats are meowing. How many cats are meowing?"
+- Medium Concreteness: "There are 200 cats at a cat park. How many cats are meowing if 100 more cats show up at the park? 20 cats are meowing in total."
+- Low Concreteness: "A cat park is filled with 200 cats. 100 more cats show up. Then 25% of the cats are meowing. How many are meowing?"
+
+If you had to pick only two most reasonable questions, which would they be?
+
+**High Concreteness**
+
+1. How many cats are meowing at the cat park if there are 40 cats here and a total of 200 in the park?
+2. How many cats are meowing in total at the park if there are 200 cats at the cat park and 100 more cats are there?
+
+**Medium Concreteness**
+
+1. How many cats are meowing if there are 200 cats at a cat park where 100 more cats show up?
+2. How many cats are meowing in total if there are 200 cats at a cat park and 25% of them are meowing?
+
+**Low Concreteness**
+
+1. How many cats at a park are meowing?
+2. How many cats at the park are meowing in a total because 100 more cats are there?
+
+I think these are the most reasonable questions.
+
+**Additional Observations:**
+
+I attempted to create more varied questions beyond these two categories of high, medium, and low concreteness in the context of cats and cat parks. Unfortunately, creating any question beyond these two, or at least a small variation, will drastically decrease the concreteness. 
+
+**Clarification Request for Definitions:** 
+
+How would you define concreteness in terms of cats, particularly the number of cats meowing? Can we use numbers? Or is it about

@@ -1,0 +1,49 @@
+ Concreteness is defined as a word's total amount of tangible words. High concreteness means a sentence has sufficient real objects and well-defined words that make a meaningful sentence with a high number of specifics. Low concreteness means a sentence has a large amount of abstract words and undefined objects that still make a meaningful sentence but lack a clear story. Use the given definition of concreteness and generate questions with high, medium and low concreteness based on the following information, 200 cats are in a cat park. 100 more cats show up at the cat park. 25% of the cats at the cat park are meowing. How many cats are meowing?  You may assume that all cats are capable of meowing.
+
+**Task:**
+
+1. For each question, analyze words and identify word category and concreteness level using the information provided.
+2. Define question, answer and its concreteness level (High, Medium, Low).
+3.  Generate the 3 types of questions.
+
+
+
+**Word Categories:**
+
+* **Concrete:**  These are words with inherent meaning and easily identified with real objects (e.g. `cat`, `park`. `meow`).
+* **Abstract:**  These deal with abstract ideas and concepts (e.g., `more`, `show up`, `meowing`, '25%', `amount`).
+
+
+
+
+**Questions:**
+
+**High Concreteness:** 
+
+**Question (Example):** `How many cats at the cat park are meowing?' 
+**Answer (Example):** `200`.
+**Concreteness (Example):** High
+
+**Medium Concreteness:** 
+    *  You need to explain the word's abstract meaning in the context of concrete content. For instance, 25% of 200 cats means 50 cats are meowing (concrete), but that might be not clear to a reader without context. For the purpose of our example, I would explain 25% of 200 is 50. 75% is not 250 (an abstract concept), but 100 (an concrete number).
+
+**Question (Example): ** `If the cat park has 200 cats and 100 more cats show up, how many of these 300 cats are meowing?` 
+
+**Answer (Example):** 75. 
+
+**Concreteness (Example):** Medium
+
+**Low Concreteness:** 
+    - All concrete numbers in the problem should be considered.
+
+
+**Question (Example):** `How many cats are meowing in the cat park?'
+
+
+**Answer (Example):**  `There are some cats at the park. It might be a medium sized park with 200 cats. 100 more cats show up. 25% of the cats at the cat park are meowing. How many of these 300 cats are meowing.`
+ 
+**Concreteness (Example):**  Low
+
+
+
+Let me know if you would like a few more specific examples of

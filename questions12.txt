@@ -1,0 +1,41 @@
+ Concreteness is defined as a word's total amount of tangible words. High concreteness means a sentence has sufficient real objects and well-defined words that make a meaningful sentence with a high number of specifics. Low concreteness means a sentence has a large amount of abstract words and undefined objects that still make a meaningful sentence but lack a clear story. Use the given definition of concreteness and generate questions with high, medium and low concreteness based on the following information, 200 cats are in a cat park. 100 more cats show up at the cat park. 25% of the cats at the cat park are meowing. How many cats are meowing?  Here's how to generate a question based on the given definition:
+
+* **High concreteness:**  How many cats in the park are meowing?
+* **Medium concreteness:** What is the percentage of cats meowing at the cat park?
+* **Low concreteness:** How many cats at the park are meowing?
+
+**Let's answer these based on the information provided!**
+
+* **High concreteness:** How many cats in the park are meowing? 
+* **Medium concreteness:** What is the percentage of cats meowing at the cat park?
+* **Low concreteness:** How many cats at the cat park are meowing?
+
+**Here is the answer!**
+
+* **High concreteness:** 50 cats are meowing.  
+* **Medium concreteness:** The meowing cats make up 25% of the cats at the park.
+* **Low concreteness:** There are 300 cats meowing at the park. It would tell us how many out of 200 are meowing and 100 more have shown up.
+
+**Explanation**
+
+*  **High concreteness:**  It is simple enough to define and answer, therefore high concreteness.
+* **Medium concreteness:**  A medium level of concreteness because we only need to determine the percentage (25%).  
+* **Low concreteness:** It is more ambiguous. The question implies it counts the percentage of the total park cats, and we don't know the relationship between meowing cats and total park cats.   
+
+
+
+```python
+# Function to generate questions with varying concreteness levels
+def generate_questions(definition, information):
+
+    print("\n" + "\n".join(f"{definition}?\n\n" * 3 for i in range(3)))
+
+
+# Example usage
+def main():
+    
+    generate_questions("How many cats at the park are meowing?", "There are 200 cats. It is stated that that 25% of the cats are meowing.  Another 100 more cats show up at the cat park, bringing the total to 300.")
+
+if __name__ == "__main__":
+    main()
+```

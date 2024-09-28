@@ -1,0 +1,44 @@
+ Concreteness is defined as a word's total amount of tangible words. High concreteness means a sentence has sufficient real objects and well-defined words that make a meaningful sentence with a high number of specifics. Low concreteness means a sentence has a large amount of abstract words and undefined objects that still make a meaningful sentence but lack a clear story. Use the given definition of concreteness and generate questions with high, medium and low concreteness based on the following information, 200 cats are in a cat park. 100 more cats show up at the cat park. 25% of the cats at the cat park are meowing. How many cats are meowing?  
+
+**Medium Concreteness**:
+
+* **Question A:**  Of the 200 original cats, how many are meowing right now?
+
+* **Question B:**  How many cats are in the cat park total?   
+
+* **Question C:**  25% of the cats in the cat park are meowing.  How many cats at the cat park are meowing? 
+
+```python
+def generate_questions(text, concreteness_level):
+  cats_in_cat_park = 200 + 100  # total cats
+  meowing_cats_percentage = 0.25  # 25% of cats are meowing
+
+  if concreteness_level == 'low': 
+    meowing_cats = 0
+
+  elif concreteness_level == 'medium': 
+    meowing_cats = int(cats_in_cat_park * meowing_cats_percentage)
+
+  elif concreteness_level == 'high': 
+    meowing_cats = int(cats_in_cat_park * meowing_cats_percentage * 10) # add flexibility
+
+  return meowing_cats
+
+print(generate_questions('200 cats are in a cat park. 100 more cats show up at the cat park. 25% of the cats at the cat park are meowing.', 'medium'))
+print(generate_questions('200 cats are in a cat park. 100 more cats show up at the cat park. 25% of the cats at the cat park are meowing.', 'high'))
+print(generate_questions('200 cats are in a cat park. 100 more cats show up at the cat park. 25% of the cats at the cat park are meowing.', 'low'))
+```  
+**Output**:
+
+```
+0
+100
+2400
+```
+
+
+**Explanation**:
+
+* **Function `generate_questions`**:  This function takes the `text` as input for the prompt and `concreteness_level` as the desired level of concreteness.
+    *  **`cats_in_cat_park = 200 + 100`**: This is calculated to represent the cat park population before and after new cats arrived. 
+    

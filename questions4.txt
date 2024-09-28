@@ -1,0 +1,49 @@
+ Concreteness is defined as a word's total amount of tangible words. High concreteness means a sentence has sufficient real objects and well-defined words that make a meaningful sentence with a high number of specifics. Low concreteness means a sentence has a large amount of abstract words and undefined objects that still make a meaningful sentence but lack a clear story. Use the given definition of concreteness and generate questions with high, medium and low concreteness based on the following information, 200 cats are in a cat park. 100 more cats show up at the cat park. 25% of the cats at the cat park are meowing. How many cats are meowing?  
+
+import nltk
+from nltk.corpus import wordnet
+from nltk.tokenize import word_tokenize
+
+
+def calculate_concrete_ness(sentence):
+    """Calculates the concreteness of a given sentence.
+
+    Args:
+        sentence (str): The sentence to be analyzed.
+
+    Returns:
+        int: The concreteness score (0-100), where 100 represents completely concrete.
+    """
+    # Preprocess the sentence and identify nouns
+    tokens = word_tokenize(sentence.lower())
+    # Only consider concrete nouns
+    concrete_nouns = [token for token in tokens if token.lower() in wordnet.words()]
+
+    # calculate concreteness based on the number of concrete nouns
+    # Example: 7 concrete nouns
+    # (7/100) * 100
+    concrete_ness = min(concrete_nouns)
+    return concrete_ness
+
+
+# Given information
+cats_in_park = 200
+cats_arrive = 100
+meowing_cats = 0
+meowing_percentage = 25
+
+# Calculates concreteness of the given information and prints them
+print(f"Cats in the cat park: {cats_in_park:d}")
+print(f"Cats that arrive: {cats_arrive:d}")
+print(
+    f"meowing cats: {(cats_in_park + cats_arrive) * meowing_percentage / 100:.2f}"
+)
+
+# Calculates concreteness of the given information and prints them
+print("Concretely measured Information:")
+concrete_meowing_data = calculate_concrete_ness(
+    f"The cat park has {cats_in_park} cats. 100 more cats arrive. The number of meowing cats in the park is {meowing_percentage*cats_in_park:2.0f}/100"
+)
+
+print(f"Concretely measured Information: {concrete_meowing_data:.2f}")
+

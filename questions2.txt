@@ -1,0 +1,30 @@
+ Concreteness is defined as a word's total amount of tangible words. High concreteness means a sentence has sufficient real objects and well-defined words that make a meaningful sentence with a high number of specifics. Low concreteness means a sentence has a large amount of abstract words and undefined objects that still make a meaningful sentence but lack a clear story. Use the given definition of concreteness and generate questions with high, medium and low concreteness based on the following information, 200 cats are in a cat park. 100 more cats show up at the cat park. 25% of the cats at the cat park are meowing. How many cats are meowing?  
+
+## Questions:
+
+**High concreteness:**
+
+* Question 1: Out of 200 cats, 1/4 of them are meowing. How many meowing cats are there in the cat park?
+
+* Question 2: 200 cats are in the park and there are 100 more cats playing. The meowing rate in cats in the park is 60%. How many cats are meowing?
+
+**Medium concreteness:**
+
+* Question 3: Out of the 200 cats in the park, 20% of them are meowing.  How many cats are meowing?
+
+
+**Low concreteness:**
+
+* Question 4: The park is crowded with 200+ cats in the park. These cats are all meowing.
+
+* Question 5:  How many cats are meowing in the cat park?
+
+
+Let's discuss how to break down the questions into different levels of concreteness:
+ - **High concreteness:**  The questions focus on precise, specific numbers (200, 100, 25%) and include actions like "are meowing" and clear definitions of objects (e.g., cats).
+ - **Medium concreteness:** The questions might still use general terms (cats, park), but there's some focus on quantities (total number of cats, percentage for specific action like meowing)
+ - **Low concreteness:**  The questions might still focus on percentages, but abstract, open-ended phrasing like "how many cats are meowing?"
+
+
+Also, remember the goal is to have questions that are answerable in a straightforward manner. 
+

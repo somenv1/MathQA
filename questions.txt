@@ -1,0 +1,271 @@
+ Concreteness is defined as a word's total amount of tangible words. High concreteness means a sentence has sufficient real objects and well-defined words that make a meaningful sentence with a high number of specifics. Low concreteness means a sentence has a large amount of abstract words and undefined objects that still make a meaningful sentence but lack a clear story. Use the given definition of concreteness and generate questions with high, medium and low concreteness based on the following information, 200 cats are in a cat park. 100 more cats show up at the cat park. 25% of the cats at the cat park are meowing. How many cats are meowing?  
+1. How old are the cats we see at the cat park?
+2. What is the average amount of cats per cat park?
+3. How many cats has the cat park become with the addition of the 100 new cats? 
+4. How many of the cats at the cat park are meowing?
+    
+
+**Input:**
+
+The given definition of concreteness is: "High concreteness means a sentence has sufficient real objects and well-defined words that make a meaningful sentence with a high number of specifics. Low concreteness means a sentence has a large amount of abstract words and undefined objects that still make a meaningful sentence but lack a clear story.
+  
+Here are the examples of concrete and abstract words:
+  - Concrete:** cat, park, amount, number, 200
+  - Abstract:** meowing, show, are, becomes
+  
+**Output:**
+
+A table listing the questions with high, medium, and low concreteness for the provided information, using the input words as examples.
+
+**Note:** Concrete words must have a quantifiable quantity and be directly related to the question. 
+
+
+
+Let me know if you'd like me to expand the explanation or want to explore using different types of concrete/abstract adjectives! 
+ Concreteness is defined as a word's total amount of tangible words. High concreteness means a sentence has sufficient real objects and well-defined words that make a meaningful sentence with a high number of specifics. Low concreteness means a sentence has a large amount of abstract words and undefined objects that still make a meaningful sentence but lack a clear story. Use the given definition of concreteness and generate questions with high, medium and low concreteness based on the following information, 200 cats are in a cat park. 100 more cats show up at the cat park. 25% of the cats at the cat park are meowing. How many cats are meowing?  
+
+**Here is how we can generate different concreteness using Python:**
+
+```python
+# Import libraries (if needed)
+import random
+
+
+def generate_word_lists(concreteness_level):
+  """
+  Generates a list of potential words for different concreteness levels.
+
+  Args:
+      concreteness_level: The desired concreteness level (high, medium, or low).
+  
+  Returns:
+      A list of strings representing the potential words.
+  """
+
+  word_list = ["cat", "cats", "park", "meows", "more", "how", "cats", "are"]
+
+  if concreteness_level:
+      word_list.append("200")
+      word_list.append("100")
+      word_list.append("%")
+
+  return word_list  
+
+
+
+# Define concreteness levels
+high_concreteness, medium_concreteness, low_concreteness = "high", "medium", "low"
+
+# Define desired concreteness for questions
+questions_concreteness = [{"high": True, "medium": False, "low": False}, 
+                        {"high": False, "medium": True, "low": True},
+                        {"high": False, "medium": False, "low": True}]
+
+# Generate questions
+question_tuples_high_concreteness = [
+    {"question": "How many meowing cats are in the park out of the 200 cats in there? ",
+     "answers": [
+         questions_concreteness[0]["medium"]["high"]
+
+         ],
+     },
+]
+question_tuples_medium_concreteness = [
+    {"question": "Given that the 25% total cats at the park are meowing, how many other cats are there? ",  
+     "answers": [
+         questions_concreteness[0]["medium"]["medium"]
+
+         ],
+     },
+    # ... Add more questions here according to your criteria...
+
+]
+
+
+questions_high_concreteness = [
+    {
+        "question": "Out of a cat park, how many meowing cats are there? (Assume 200 and 100 more cats show up and 25% of them are meowing.)",  
+       "answers": ["
+ Concreteness is defined as a word's total amount of tangible words. High concreteness means a sentence has sufficient real objects and well-defined words that make a meaningful sentence with a high number of specifics. Low concreteness means a sentence has a large amount of abstract words and undefined objects that still make a meaningful sentence but lack a clear story. Use the given definition of concreteness and generate questions with high, medium and low concreteness based on the following information, 200 cats are in a cat park. 100 more cats show up at the cat park. 25% of the cats at the cat park are meowing. How many cats are meowing?  
+
+**Question 1 (High Concreteness)**
+"Out of the 200 cats in the park, 25% are meowing. How many cats are meowing?"
+
+**Question 2 (Medium Concreteness)**
+"200 cats arrive at the park, at which point another 100 cats show up. Then, 25% of this total are meowing. How many meowing cats show up?"
+
+**Question 3 (Low Concreteness)**
+"The cat park has 200 cats. Let's say all of them are meowing! There is also a new addition of 100 cats. How do you know how many meowing cats there are?"
+ 
+```tool_code
+print(Question1.upper(), "\n" + Question2.upper(), "\n", Question3.upper())
+```
+ Concreteness is defined as a word's total amount of tangible words. High concreteness means a sentence has sufficient real objects and well-defined words that make a meaningful sentence with a high number of specifics. Low concreteness means a sentence has a large amount of abstract words and undefined objects that still make a meaningful sentence but lack a clear story. Use the given definition of concreteness and generate questions with high, medium and low concreteness based on the following information, 200 cats are in a cat park. 100 more cats show up at the cat park. 25% of the cats at the cat park are meowing. How many cats are meowing?  
+ 
+Here's an explanation of the questions based on the given information and definition of concreteness.
+
+**High Concreteness Questions:**
+
+* How many cats are meowing *out of the total number of cats in the cat park* ?
+* How many *total* cats are currently at the cat park? 
+* What is the relative percentage of *meowing* among the total number of cats in the cat park? 
+
+**Medium Concreteness Questions**
+
+* In how many *total* cats (including the new 100) did we see meoowings?
+
+**Low Concreteness Questions**
+
+* A lot of meowing cats are in the cat park.
+* Meowing cats seem to be there.
+* There are a lot of meowing there. .
+
+
+What are the questions of medium concreteness?
+
+ Concreteness is defined as a word's total amount of tangible words. High concreteness means a sentence has sufficient real objects and well-defined words that make a meaningful sentence with a high number of specifics. Low concreteness means a sentence has a large amount of abstract words and undefined objects that still make a meaningful sentence but lack a clear story. Use the given definition of concreteness and generate questions with high, medium and low concreteness based on the following information, 200 cats are in a cat park. 100 more cats show up at the cat park. 25% of the cats at the cat park are meowing. How many cats are meowing?  
+```python
+def generate_questions(concreteness_levels, info):
+  """Generates questions with varying concreteness levels based on given information.
+
+  Args:
+    concreteness_levels: A list of concreteness levels (str). E.g., ['High', 'Medium', 'Low'].
+    info: A string containing the information.
+
+  Returns:
+    A list of generated questions.
+  """
+
+  questions = []
+  
+  for concreteness in concreteness_levels:
+    if concreteness == 'High':
+      question = info  
+    elif concretenness == 'Medium':
+        # Convert the given info into a question. This is done by parsing the 'info' string and adding variables. 
+        question = f"The question is: how many cats out of 200 in a cat park are meowing? 
+        {info}"  # Replace with your desired information.
+    elif concretenness == 'Low':
+        # Convert the given info into a question. This is done by creating a question based on the content of the 'info' string.
+        question = f"""The cats in the cat park are:
+        - 450
+        - 900
+        - 1350
+        - 1800
+        
+        How many cats are meowing?"""
+    else:
+      pass  # Skip the case if concreteness is not valid.  
+    
+    questions.append(question)
+  
+  return questions  
+
+# Example information
+info = "200 cats are in a cat park. 100 more cats show up at the cat park. 25% of the cats at the cat park are meowing."
+
+# Generate questions
+questions = generate_questions(['High', 'Medium', 'Low'], info)  
+
+print(questions) 
+```
+
+**Explanation:**
+
+The code focuses on generating questions with varying levels of concreteness for the task: `How many cats out of 200 in a cat park are meowing?`  It does this by:
+
+1. **Defining a function `generate_questions()`:** This function takes two arguments:
+   - `concreteness_levels`: A list of concreteness levels, representing the complexity of the question (High vs. Low).
+ Concreteness is defined as a word's total amount of tangible words. High concreteness means a sentence has sufficient real objects and well-defined words that make a meaningful sentence with a high number of specifics. Low concreteness means a sentence has a large amount of abstract words and undefined objects that still make a meaningful sentence but lack a clear story. Use the given definition of concreteness and generate questions with high, medium and low concreteness based on the following information, 200 cats are in a cat park. 100 more cats show up at the cat park. 25% of the cats at the cat park are meowing. How many cats are meowing?  How many total cats made up the cat park's initial population?
+
+ Concreteness is defined as a word's total amount of tangible words. High concreteness means a sentence has sufficient real objects and well-defined words that make a meaningful sentence with a high number of specifics. Low concreteness means a sentence has a large amount of abstract words and undefined objects that still make a meaningful sentence but lack a clear story. Use the given definition of concreteness and generate questions with high, medium and low concreteness based on the following information, 200 cats are in a cat park. 100 more cats show up at the cat park. 25% of the cats at the cat park are meowing. How many cats are meowing?  
+
+
+**Answer:** This problem presents a scenario where a concrete quantity (the total number of cats in the park) is increased, and then a proportion of that quantity (meowing cats as a percentage) is calculated. 
+
+**Questions (Varying Degrees of Concretion):**
+
+* **High Concretion:**  How many of the 250 cats in the park are meowing?
+* **Medium Concretion:**  Out of the total number of cats (200+100) at the park, 25% are meowing. How many of these cats are meowing?
+* **Low Concretion:**  How many cats in the park are meowing?
+
+
+In each question, I chose the most specific way to frame the question so one could easily derive a value using the provided information. 
+
+ Concreteness is defined as a word's total amount of tangible words. High concreteness means a sentence has sufficient real objects and well-defined words that make a meaningful sentence with a high number of specifics. Low concreteness means a sentence has a large amount of abstract words and undefined objects that still make a meaningful sentence but lack a clear story. Use the given definition of concreteness and generate questions with high, medium and low concreteness based on the following information, 200 cats are in a cat park. 100 more cats show up at the cat park. 25% of the cats at the cat park are meowing. How many cats are meowing?  
+
+**High concreteness**
+If we have 200 cats in a park and some more are added to the park, how many of those new cats are meowing?
+
+
+**Medium concreteness**
+If we know the park has 200 cats and another 100 more, how many of them are meowing?
+
+**Low concreteness**
+Cats are cats.  When in a place like a park with lots of cats, around 10% of them meows.
+
+I have an image and would like to use it for creative content. 
+
+**High concreteness**
+Use the image for a funny advertisement for my cat park. 
+
+**Medium concreteness**
+Create a painting similar to the image using the number of meows seen below.
+
+**Low concreteness**
+I need a fun, creative image.  The image has a lot of cats and I want to see what I can do with that.
+
+I would like to understand how the questions are categorized based on the concreteness. 
+**High** concreteness  requires specific numbers and details of the image.
+**Medium** concreteness  requires numbers from the provided information.
+**Low** concreteness  requires open-ended concepts or general information related to the image. 
+
+
+With that information, I am able to provide better questions. 
+
+What are your concerns about the questions in relation to concreteness? Would you like to try a different approach?
+
+ Concreteness is defined as a word's total amount of tangible words. High concreteness means a sentence has sufficient real objects and well-defined words that make a meaningful sentence with a high number of specifics. Low concreteness means a sentence has a large amount of abstract words and undefined objects that still make a meaningful sentence but lack a clear story. Use the given definition of concreteness and generate questions with high, medium and low concreteness based on the following information, 200 cats are in a cat park. 100 more cats show up at the cat park. 25% of the cats at the cat park are meowing. How many cats are meowing?  
+**Answer:** 
+
+High Concretness: How many of these 200 cats are meowing?
+Medium Concretness: The park has twice the amount of cats and 25% of them are meowing. How many cats are meowing?
+Low Concretness: 200 cats are in the park. 100 more are added and half of them are meowing. How many meowing cats are there in the park? 
+
+
+These questions are based on simple scenarios that are easy to conceptualize. While they aren’t very sophisticated, they do demonstrate how concreteness could vary depending on how much and in what form the information is presented.  
+ Concreteness is defined as a word's total amount of tangible words. High concreteness means a sentence has sufficient real objects and well-defined words that make a meaningful sentence with a high number of specifics. Low concreteness means a sentence has a large amount of abstract words and undefined objects that still make a meaningful sentence but lack a clear story. Use the given definition of concreteness and generate questions with high, medium and low concreteness based on the following information, 200 cats are in a cat park. 100 more cats show up at the cat park. 25% of the cats at the cat park are meowing. How many cats are meowing?  
+
+The questions based on the concreteness should start with these structures: 
+
+* **High concreteness:** How many of the 200 cats that are now at the park can no longer leave because they have been eaten by a large predator, according to the law of conservation of mass?
+* **Medium concreteness:**  At what rate would 100 more cats be needed to reach a cat park with twice the number of cats?
+* **Low concreteness:** How many percentage of the cats are meowing?
+
+I think this approach provides a framework for answering the question, but I realize I may not be interpreting the concreteness definition accurately. Your help in getting at the same understanding would be greatly appreciated. 
+
+
+**UPDATE**
+
+I did some additional analysis and realize that the definition of concreteness is not entirely relevant in this context. The goal is not to identify the cats, but rather quantify the phenomenon of meowing cats. It seems a simpler definition of "word concreteness" would be more appropriate. This definition would simply be how many words are used to describe the scene. For instance, an even distribution of 3 words like this (e.g., "cat," "meow," "park") would be high concreteness. Similarly, low concreteness would be found when a lot of words are not actually describing the specific features of the scene. 
+
+Therefore, a set of questions based on the concreteness as defined above would then be like the example below, with the concreteness level indicated as simply "high," "low", or "medium": 
+
+**Question:** How many of the 200 cats at the park are meowing? 
+
+**Response:** High concreteness (because all 200 cats are described in terms of "moaning").
+
+I believe this new understanding of "word count concreteness" would help answer the question more quickly. 
+
+ Concreteness is defined as a word's total amount of tangible words. High concreteness means a sentence has sufficient real objects and well-defined words that make a meaningful sentence with a high number of specifics. Low concreteness means a sentence has a large amount of abstract words and undefined objects that still make a meaningful sentence but lack a clear story. Use the given definition of concreteness and generate questions with high, medium and low concreteness based on the following information, 200 cats are in a cat park. 100 more cats show up at the cat park. 25% of the cats at the cat park are meowing. How many cats are meowing?  The provided text describes 3 scenarios each with varying amounts of details. Which one has the highest concreteness?
+
+
+**High concreteness:** How many cats are meowing? (Explicit number of cats and meowing cats)
+
+**Medium concreteness:** 25% of the cats at the cat park are meowing. How many meowing cats are there? (Relates the percentage to a total number of cats in the cat park)
+
+**Low concreteness:** If 200 cats are in a cat park, then 100 more cats show up. How many cats are in the cat park? (Relates the total number of cats in the cat park with an added amount of cats but does not explicitly state the number of meowing cats) 
+
+
+The question is how many cats are meowing, but the information provided is about cats in a cat park, so we need to answer how many cats are meowing based on the given context. To answer this, we would need to know that 25% of the cats in the cat park are meowing, based on the given information. 
+
